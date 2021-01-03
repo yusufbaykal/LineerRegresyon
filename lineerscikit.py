@@ -8,8 +8,8 @@ data = pd.read_csv("linear.csv")
 x = data["metrekare"]
 y = data["fiyat"]
 
-x = x.reshape(99,1)
-y = y.reshape(99,1)
+x = x.values.reshape(99,1)
+y = y.values.reshape(99,1)
 
 lineerregresyon = lr() # Lineer Regresyonu çağırdık.
 
